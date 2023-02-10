@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE empresa SYSTEM "empresa.dtd">
+<empresa>
+    <pedido>
+        <sucursal>
+            <codigosucursal>A1111111</codigosucursal>
+            <nombretrabajador>Agustin Perez</nombretrabajador>
+            <fechapedido>10/02/2023</fechapedido>
+            <observacionesucursal>urgente</observacionesucursal>
+            <direccion>Moreno de Mora nº3</direccion>
+        </sucursal>
+        <almacen>
+            <direccion>Ubrique</direccion>
+            <articulos>
+                <codigopedido>AAA-111</codigopedido>
+                <numerounidades>2</numerounidades>
+                <preciounidad>12</preciounidad>
+                <observacionesarticulo>Agarre magnetico color amarillo</observacionesarticulo>
+                <plazorevision>4</plazorevision>
+            </articulos>
+        </almacen>
+    </pedido>
+</empresa>

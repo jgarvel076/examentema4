@@ -1,0 +1,17 @@
+<!ELEMENT empresa (pedido)>
+<!ELEMENT pedido (sucursal,almacen)>
+<!ELEMENT sucursal (codigosucursal,nombretrabajador,fechapedido,observacionesucursal,direccion)>
+<!ELEMENT codigosucursal (#PCDATA)>
+<!ELEMENT nombretrabajador (#PCDATA)>
+<!ELEMENT fechapedido (#PCDATA)>
+<!ELEMENT observacionesucursal (urgente|incompleto)>
+<!ELEMENT urgente (#PCDATA)>
+<!ELEMENT incompleto (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT almacen (direccion,articulos)>
+<!ELEMENT articulos (codigopedido,numerounidades,preciounidad,observacionesarticulo,plazorevision)>
+<!ELEMENT codigopedido (#PCDATA)>
+<!ELEMENT numerounidades (#PCDATA)>
+<!ELEMENT preciounidad (#PCDATA)>
+<!ELEMENT observacionesarticulo (#PCDATA)>
+<!ELEMENT plazorevision (#PCDATA)>

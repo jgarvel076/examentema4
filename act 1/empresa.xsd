@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pedido">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sucursal">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codigosucursal" type="xs:string" />
+                                        <xs:element name="nombretrabajador" type="xs:string" />
+                                        <xs:element name="fechapedido" type="xs:string" />
+                                        <xs:element name="observacionesucursal" type="xs:string" />
+                                        <xs:element name="direccion" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="almacen">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="direccion" type="xs:string" />
+                                        <xs:element name="articulos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="codigopedido" type="xs:string" />
+                                                    <xs:element name="numerounidades"
+                                                        type="xs:string" />
+                                                    <xs:element name="preciounidad" type="xs:string" />
+                                                    <xs:element name="observacionesarticulo"
+                                                        type="xs:string" />
+                                                    <xs:element name="plazorevision"
+                                                        type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
